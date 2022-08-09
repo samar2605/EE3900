@@ -168,7 +168,7 @@ Digital Signal Processing
 % was not built to handle multiple paragraphs
 %
 
-\author{ Samar Singhai$^{}$ %<-this  stops a space
+\author{ Samar Singhai$^{}$\\BM20BTECH11012 %<-this  stops a space
 \thanks% <-this % stops a space
 %\thanks{J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
 %\thanks{Manuscript received April 19, 2005; revised January 11, 2007.}}
@@ -315,7 +315,16 @@ Sketch $y(n)$.
 \label{fig:A1_3}	
 \end{figure}
 \item Repeat the above exercise using a C code.
-
+\solution The following code yields Fig. \ref{fig:A1_3point3}.
+\lstinputlisting{./codes/A1_3.c}
+\lstinputlisting{./codes/A1_3point3.py}
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=\columnwidth]{./figs/A1_3point3.png}
+\end{center}
+\captionof{figure}{}
+\label{fig:A1_3point3}	
+\end{figure}
 \end{enumerate}
 \section{$Z$-transform}
 \begin{enumerate}[label=\thesection.\arabic*]

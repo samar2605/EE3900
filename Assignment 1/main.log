@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.9)  9 AUG 2022 14:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.9)  9 AUG 2022 16:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -737,102 +737,113 @@ File: ./figs/A1_3.png Graphic file (type png)
 <use ./figs/A1_3.png>
 Package pdftex.def Info: ./figs/A1_3.png  used on input line 312.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+ (./codes/A1_3.c
+LaTeX Font Info:    Font shape `OML/txr/m/it' in size <12> not available
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 1.
+LaTeX Font Info:    Trying to load font information for OMS+txr on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
+File: omstxr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 3.
+ [2 <./figs/A1_3.png>]) (./codes/A1_3point3.py)
+<./figs/A1_3point3.png, id=181, 462.528pt x 346.896pt>
+File: ./figs/A1_3point3.png Graphic file (type png)
+<use ./figs/A1_3point3.png>
+Package pdftex.def Info: ./figs/A1_3point3.png  used on input line 323.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 320.
+(hyperref)                removing `math shift' on input line 329.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 320.
+(hyperref)                removing `math shift' on input line 329.
 
-[2 <./figs/A1_3.png>]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [3 <./figs/A1_3point3.png>]
+
+LaTeX Warning: Command \j invalid in math mode on input line 424.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 415.
+LaTeX Warning: Command \j invalid in math mode on input line 424.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 415.
+LaTeX Warning: Command \j invalid in math mode on input line 426.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 417.
+LaTeX Warning: Command \j invalid in math mode on input line 426.
 
-
-LaTeX Warning: Command \j invalid in math mode on input line 417.
-
-<./figs/dtft.pdf, id=177, 462.52798pt x 346.89601pt>
+<./figs/dtft.pdf, id=248, 462.52798pt x 346.89601pt>
 File: ./figs/dtft.pdf Graphic file (type pdf)
 <use ./figs/dtft.pdf>
-Package pdftex.def Info: ./figs/dtft.pdf  used on input line 426.
+Package pdftex.def Info: ./figs/dtft.pdf  used on input line 435.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
-LaTeX Warning: Command \j invalid in math mode on input line 427.
+LaTeX Warning: Command \j invalid in math mode on input line 436.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 427.
+LaTeX Warning: Command \j invalid in math mode on input line 436.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 430.
+LaTeX Warning: Command \j invalid in math mode on input line 439.
 
-
-Underfull \vbox (badness 1527) has occurred while \output is active []
-
- [3 <./figs/dtft.pdf>]
-<./figs/hn.pdf, id=258, 462.52798pt x 346.89601pt>
+<./figs/hn.pdf, id=255, 462.52798pt x 346.89601pt>
 File: ./figs/hn.pdf Graphic file (type pdf)
 <use ./figs/hn.pdf>
-Package pdftex.def Info: ./figs/hn.pdf  used on input line 467.
+Package pdftex.def Info: ./figs/hn.pdf  used on input line 476.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<./figs/hndef.pdf, id=263, 462.52798pt x 346.89601pt>
+[4 <./figs/dtft.pdf> <./figs/hn.pdf
+
+pdfTeX warning: pdflatex (file ./figs/hn.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<./figs/hndef.pdf, id=372, 462.52798pt x 346.89601pt>
 File: ./figs/hndef.pdf Graphic file (type pdf)
 <use ./figs/hndef.pdf>
-Package pdftex.def Info: ./figs/hndef.pdf  used on input line 497.
+Package pdftex.def Info: ./figs/hndef.pdf  used on input line 506.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<./figs/ynconv.pdf, id=267, 462.52798pt x 346.89601pt>
+<./figs/ynconv.pdf, id=376, 462.52798pt x 346.89601pt>
 File: ./figs/ynconv.pdf Graphic file (type pdf)
 <use ./figs/ynconv.pdf>
-Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 522.
+Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 531.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-
-Underfull \vbox (badness 2096) has occurred while \output is active []
-
- [4 <./figs/hn.pdf> <./figs/hndef.pdf
-
-pdfTeX warning: pdflatex (file ./figs/hndef.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figs/ynconv.pdf
-
-pdfTeX warning: pdflatex (file ./figs/ynconv.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-
-LaTeX Warning: Command \j invalid in math mode on input line 540.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 549.
 
-<./figs/yndft.pdf, id=413, 462.52798pt x 346.89601pt>
+
+LaTeX Warning: Command \j invalid in math mode on input line 558.
+
+<./figs/yndft.pdf, id=379, 462.52798pt x 346.89601pt>
 File: ./figs/yndft.pdf Graphic file (type pdf)
 <use ./figs/yndft.pdf>
-Package pdftex.def Info: ./figs/yndft.pdf  used on input line 561.
+Package pdftex.def Info: ./figs/yndft.pdf  used on input line 570.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-[5 <./figs/yndft.pdf>] (./main.aux)
+[5 <./figs/hndef.pdf> <./figs/ynconv.pdf
+
+pdfTeX warning: pdflatex (file ./figs/ynconv.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [6
+
+ <./figs/yndft.pdf>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EDE0BD39395C52B880A8A7EB6EB76C7D;824.
  ) 
 Here is how much of TeX's memory you used:
- 16449 strings out of 478287
- 257367 string characters out of 5849290
- 977927 words of memory out of 5000000
- 34207 multiletter control sequences out of 15000+600000
+ 16554 strings out of 478287
+ 258999 string characters out of 5849290
+ 982927 words of memory out of 5000000
+ 34249 multiletter control sequences out of 15000+600000
  540545 words of font info for 183 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,9n,63p,272b,1675s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,9n,63p,272b,1991s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtcxi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 172222 bytes).
+Output written on main.pdf (6 pages, 189916 bytes).
 PDF statistics:
- 577 PDF objects out of 1000 (max. 8388607)
- 383 compressed objects within 4 object streams
- 179 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 651 PDF objects out of 1000 (max. 8388607)
+ 453 compressed objects within 5 object streams
+ 233 named destinations out of 1000 (max. 500000)
+ 92 words of extra memory for PDF output out of 10000 (max. 10000000)
 
