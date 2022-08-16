@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.9)  9 AUG 2022 16:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.9)  10 AUG 2022 11:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -791,21 +791,24 @@ LaTeX Warning: Command \j invalid in math mode on input line 436.
 
 LaTeX Warning: Command \j invalid in math mode on input line 439.
 
+
+Underfull \vbox (badness 6110) has occurred while \output is active []
+
 <./figs/hn.pdf, id=255, 462.52798pt x 346.89601pt>
 File: ./figs/hn.pdf Graphic file (type pdf)
 <use ./figs/hn.pdf>
 Package pdftex.def Info: ./figs/hn.pdf  used on input line 476.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-[4 <./figs/dtft.pdf> <./figs/hn.pdf
+ [4 <./figs/dtft.pdf> <./figs/hn.pdf
 
 pdfTeX warning: pdflatex (file ./figs/hn.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<./figs/hndef.pdf, id=372, 462.52798pt x 346.89601pt>
+<./figs/hndef.pdf, id=371, 462.52798pt x 346.89601pt>
 File: ./figs/hndef.pdf Graphic file (type pdf)
 <use ./figs/hndef.pdf>
 Package pdftex.def Info: ./figs/hndef.pdf  used on input line 506.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<./figs/ynconv.pdf, id=376, 462.52798pt x 346.89601pt>
+<./figs/ynconv.pdf, id=375, 462.52798pt x 346.89601pt>
 File: ./figs/ynconv.pdf Graphic file (type pdf)
 <use ./figs/ynconv.pdf>
 Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 531.
@@ -817,7 +820,7 @@ LaTeX Warning: Command \j invalid in math mode on input line 549.
 
 LaTeX Warning: Command \j invalid in math mode on input line 558.
 
-<./figs/yndft.pdf, id=379, 462.52798pt x 346.89601pt>
+<./figs/yndft.pdf, id=378, 462.52798pt x 346.89601pt>
 File: ./figs/yndft.pdf Graphic file (type pdf)
 <use ./figs/yndft.pdf>
 Package pdftex.def Info: ./figs/yndft.pdf  used on input line 570.
@@ -832,18 +835,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EDE0BD39395C52B880A8A7EB6EB76C7D;824.
  ) 
 Here is how much of TeX's memory you used:
- 16554 strings out of 478287
- 258999 string characters out of 5849290
+ 16553 strings out of 478287
+ 258984 string characters out of 5849290
  982927 words of memory out of 5000000
  34249 multiletter control sequences out of 15000+600000
  540545 words of font info for 183 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,9n,63p,272b,1991s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtcxi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 189916 bytes).
+Output written on main.pdf (6 pages, 189861 bytes).
 PDF statistics:
- 651 PDF objects out of 1000 (max. 8388607)
- 453 compressed objects within 5 object streams
- 233 named destinations out of 1000 (max. 500000)
+ 650 PDF objects out of 1000 (max. 8388607)
+ 452 compressed objects within 5 object streams
+ 232 named destinations out of 1000 (max. 500000)
  92 words of extra memory for PDF output out of 10000 (max. 10000000)
 

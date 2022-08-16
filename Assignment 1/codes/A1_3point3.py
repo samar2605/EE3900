@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 y = np.loadtxt("Y.dat",dtype = "double")
 x = np.array([1,2,3,4,2,1])
 
