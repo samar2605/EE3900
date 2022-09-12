@@ -315,7 +315,7 @@ Sketch $y(n)$.
 \label{fig:A1_3}	
 \end{figure}
 \item Repeat the above exercise using a C code.
-\solution The following code yields Fig. \ref{fig:A1_3point3}.
+\solution The following code yields Fig. \ref{fig:A1_3point3}A .
 \lstinputlisting{./codes/A1_3.c}
 \lstinputlisting{./codes/A1_3point3.py}
 \begin{figure}[!ht]
@@ -358,7 +358,13 @@ resulting in \eqref{eq:shift1}. Similarly, it can be shown that
 \end{equation}
 \item Obtain $X(z)$ for $x(n)$ defined in problem 
 	\ref{def:xn}.
-
+\solution 
+\begin{align}
+Z(x(n))&=\sum_{n=-\infty}^{\infty}x(n)z^{-n}\\
+&=x(0)z^{0}+x(1)z^{-1}+x(2)z^{-2}+x(3)z^{-3}+\\
+&\nonumber x(4)z^{-4}+x(5)z^{-5}\\
+&=1+2z^{-1}+3z^{-2}+4z^{-3}+2z^{-4}+z^{-5}
+\end{align}
 \item Find
 %
 \begin{equation}
@@ -416,7 +422,16 @@ using the fomula for the sum of an infinite geometric progression.
 \begin{equation}
 \label{eq:anun}
 a^nu(n) \ztrans \frac{1}{1-az^{-1}} \quad \abs{z} > \abs{a}
+%
 \end{equation}
+\solution
+\begin{align}
+     Z(a^nu(n))&=\sum _{n= -\infty}^{\infty}a^nu(n)z^{-n}\\
+     &=\sum _{n= 0}^{\infty}a^nz^{-n}\\
+     &=\frac{1}{1-az^{-1}} , \quad \abs{az^{-1}} < 1\\
+     &=\frac{1}{1-az^{-1}} , \quad \abs{a} < \abs{z}
+\end{align}
+using the fomula for the sum of an infinite geometric progression.
 %
 \item 
 Let
@@ -436,7 +451,51 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 \caption{$\abs{H\brak{e^{\j\omega}}}$}
 \label{fig:dtft}
 \end{figure}
-\item Express $x(n)$ in terms of $H\brak{e^{\j \omega}}$.
+\solution The following code plots Fig. \ref{fig:dtft}.
+\begin{lstlisting}
+wget https://raw.githubusercontent.com/samar2605/EE3900/master/Assignment%201/codes/dtft.py
+\end{lstlisting}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/dtft}
+\caption{$\abs{H\brak{e^{\j\omega}}}$}
+\label{fig:dtft}
+\end{figure}
+It is bounded between $(0,4)$ and periodic with period $(2\pi)$\\
+\begin{align}
+     H\brak{e^{j \omega}} &= \frac{1+e^{-2j\omega}}{1 + \frac{e^{-j\omega}}{2}}\\
+       \implies \abs{H\brak{e^{j \omega}}} &= \frac{\abs{1+e^{-2j\omega}}}{\abs{1 + \frac{e^{-j\omega}}{2}}}\\
+                           &= \frac{\abs{1+e^{2j\omega}}}{\abs{e^{2j\omega} + \frac{e^{j\omega}}{2}}}\\
+                           &= \frac{\abs{1+\cos2\omega + j\sin2\omega}}{\abs{e^{j\omega}+ \frac{1}{2}}}\\
+                           &= \frac{\abs{4\cos^2\brak{\omega} + 4j\sin\brak{\omega}\cos\brak{\omega}}}{\abs{2e^{j\omega} + 1}}\\
+                           &= \frac{\abs{4\cos\brak{\omega}}\abs{\cos\brak{\omega} + j\sin\brak{\omega}}}{\abs{2\cos\brak{\omega} + 1 + 2j\sin\brak{\omega}}}\\
+       \therefore \abs{H\brak{e^{j \omega}}} &= \frac{\abs{4\cos\brak{\omega}}}{\sqrt{5 +4\cos\brak{\omega}}}
+   \end{align}
+
+\item Express $x(n)$ in terms of $H\brak{e^{\j \omega}}$.\\
+\solution 
+\begin{align}
+	H(e^{j\omega})=\sum_{k=-\infty}^\infty h(k)e^{-j\omega k}
+\end{align}
+and
+\begin{align}
+	h(n)=\frac{1}{2\pi}\int_{-\pi}^\pi H(e^{j\omega})e^{j\omega n}d\omega 
+\end{align}
+Now,
+\begin{align}
+\frac{1}{2\pi}\int_{-\pi}^\pi& H(e^{j\omega})e^{j\omega n}d\omega\\
+ &=\frac{1}{2\pi}\int_{-\pi}^\pi \sum_{k=-\infty}^\infty h(k)e^{-j\omega k}e^{j\omega n}d\omega\\
+ &=\frac{1}{2\pi} \sum_{k=-\infty}^\infty h(k)\int_{-\pi}^\pi e^{j\omega (n-k)}d\omega\\
+ &=\frac{1}{2\pi} \sum_{k=-\infty}^\infty h(k)\int_{-\pi}^\pi\cos w(n-k) \\
+ & \nonumber d\omega + \int_{-\pi}^\pi\sin w(n-k) d\omega
+\end{align}
+\begin{align}
+ &=\frac{1}{2\pi} \sum_{k=-\infty}^\infty h(k)\int_{-\pi}^\pi\cos w(n-k)\\
+ &=\frac{1}{2\pi} \sum_{k=-\infty}^\infty h(k) \frac{\sin w(n-k)}{n-k}\Biggr|_{-\pi}^{\pi} \\
+ &=\frac{1}{2\pi} \sum_{k \not = n}h(n) \frac{\sin \pi(n-k)}{n-k} +\sum_{k = n}h(n) \frac{\sin \pi(n-k)}{n-k}\\
+ &=\frac{0+2\pi h(n)}{2\pi}\\
+ &=h(n)
+\end{align}
 \end{enumerate}
 
 \section{Impulse Response}
