@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1663706664 "/home/samar26/EE3900/filter/main.tex" "main.pdf" "main" 1663706665
+["pdflatex"] 1663707385 "/home/samar26/EE3900/filter/main.tex" "main.pdf" "main" 1663707386
   "/etc/texmf/web2c/texmf.cnf" 1659985362 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/samar26/EE3900/filter/main.tex" 1663706664 24614 e28bba861261117b64c950fe0e9f6dd5 ""
+  "/home/samar26/EE3900/filter/main.tex" 1663707384 26165 af5fc71919e9b118185ae7225d047350 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -145,14 +145,14 @@
   "figs/A1_3.png" 1660035933 20753 ef2054b26fbc89a5210300f4a233ef68 ""
   "figs/A1_3point3.png" 1660043150 17525 1b4230d1951bb35ddfd8f9a6581b82af ""
   "figs/A1_5_3.png" 1663706351 18446 4a70f78367e4aeeb642a9712f8ef94d7 ""
+  "figs/A1_5_7.png" 1663707046 19055 80d98c7f39f6698a78f9a085de3ded93 ""
+  "figs/A1_5_8.png" 1663707281 16494 c06dcd3430215ca82b941e2f3f146af2 ""
   "figs/dtft.pdf" 1659951227 15450 94db247a30fa4285a7c65e01601c6e02 ""
-  "figs/hndef.pdf" 1659951227 14242 d3e7fb01c593ca2af446f7c68f397148 ""
-  "figs/ynconv.pdf" 1659951227 14114 626c92cb9c1538e5175d323cbd504933 ""
   "figs/yndft.pdf" 1659951227 13736 fd6661324716aaebfee5f2bbcff08d0e ""
-  "main.aux" 1663706665 4663 7d002fa4d34b9afe7e2fb0aa2cd16c8b "pdflatex"
-  "main.out" 1663706665 824 ede0bd39395c52b880a8a7eb6eb76c7d "pdflatex"
-  "main.tex" 1663706664 24614 e28bba861261117b64c950fe0e9f6dd5 ""
-  "main.toc" 1663706665 495 046ad76580a79048464a967be20578e3 "pdflatex"
+  "main.aux" 1663707386 4744 e1ff04cdfddb36ae80f19bc916088da9 "pdflatex"
+  "main.out" 1663707386 824 ede0bd39395c52b880a8a7eb6eb76c7d "pdflatex"
+  "main.tex" 1663707384 26165 af5fc71919e9b118185ae7225d047350 ""
+  "main.toc" 1663707386 495 c4ed9c5a56ead38c8fc78a5fb9505583 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

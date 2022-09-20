@@ -625,7 +625,7 @@ h(n) &= \brak{-\frac{1}{2}}^{n}u(n) + \brak{-\frac{1}{2}}^{n-2}u(n-2)
 \item Verify the above result using a python code.
 \solution
 \begin{lstlisting}
-wget https://github.com/yashrajput22/EE3900-22/blob/master/codes/Section-5/5_6.py
+wget https://raw.githubusercontent.com/samar2605/EE3900/master/filter/codes/A1_5_6.py
 \end{lstlisting}
 \item 
 Compute and sketch $h(n)$ using 
@@ -636,15 +636,25 @@ h(n) + \frac{1}{2}h(n-1) = \delta(n) + \delta(n-2),
 %
 This is the definition of $h(n)$.
 \\
-\solution The following code plots Fig. \ref{fig:hndef}. Note that this is the same as Fig. 
-\ref{fig:hn}. 
-%
+\solution The following code plots Fig. \ref{fig:hndef}.
 \begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hndef.py
+     wget https://github.com/yashrajput22/EE3900-22/blob/master/codes/Section-5/5_7.py
 \end{lstlisting}
+Note that this is the same as Fig. 
+\ref{fig:hn}. 
+\begin{align}
+&= h(n) + \frac{1}{2}h(n-1) = \delta(n) + \delta(n-2)
+\\
+&= H(z) + \frac{1}{2}z^{-1}H(z) = 1+z^{-2}
+\\
+H(z) &= \frac{1}{1 + \frac{1}{2}z^{-1}} + \frac{ z^{-2}}{1 + \frac{1}{2}z^{-1}}
+\\
+h(n) &= \brak{-\frac{1}{2}}^{n}u(n) + \brak{-\frac{1}{2}}^{n-2}u(n-2)
+\end{align}
+%
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=\columnwidth]{./figs/hndef}
+\includegraphics[width=\columnwidth]{./figs/A1_5_7.png}
 \caption{$h(n)$ from the definition}
 \label{fig:hndef}
 \end{figure}
@@ -662,25 +672,61 @@ Comment. The operation in \eqref{eq:convolution} is known as
 \\
 \solution The following code plots Fig. \ref{fig:ynconv}. Note that this is the same as 
 $y(n)$ in  Fig. 
-\ref{fig:A1_3}. 
+\ref{fig:xnyn}. 
 %
 \begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/ynconv.py
+wget https://github.com/yashrajput22/EE3900-22/blob/master/codes/Section-5/5_8.py
 \end{lstlisting}
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=\columnwidth]{./figs/ynconv}
+\includegraphics[width=\columnwidth]{./figs/A1_5_8.png}
 \caption{$y(n)$ from the definition of convolution}
 \label{fig:ynconv}
 \end{figure}
 \item Express the above convolution using a Teoplitz matrix.
-
+\\\solution\\
+We know that from, \eqref{eq:convolution},
+\begin{equation}
+	y(n) = x(n)*h(n) = \sum_{k=-\infty}^{\infty}x(k)h(n-k)
+\end{equation}
+This can also be wrtten as a matrix-vector multiplication given by the expression,
+\begin{equation}
+	\label{eq:conv_matrix_vec_mult}
+	y = T\brak{h}*x
+\end{equation}
+In the equation \eqref{eq:conv_matrix_vec_mult}, $T\brak{h}$ is a Teoplitz matrix.
+\\ The equation \eqref{eq:conv_matrix_vec_mult} can be expanded as,
+\begin{align}
+	\mtx{y} &= \mtx{x} \circledast \mtx{h}\\
+	\mtx{y} &= 
+	\begin{pmatrix}
+		h_1 & 0 & . & . & . & 0 \\
+		h_2 & h_1 & . & . & . & 0 \\
+		h_3 & h_2 & h_1 & . & . & 0 \\
+		. & . & . & . & . & . \\
+		h_{n-1} & h_{n-2} & h_{n-3} & . & . & 0\\
+		h_{n} & h_{n-1} & h_{n-2} & . & . & h_1\\
+		0 & h_{n} & h_{n-1} & h_{n-2} & . & h_2\\
+		. & . & . & . & . & . \\
+		0 & . & . & . & 0 & h_{n-1} \\
+		0 & . & . & . & 0 & h_n \\
+	\end{pmatrix}
+	\begin{pmatrix}
+		x_1 \\ x_2 \\ .\\.\\. \\ x_n
+	\end{pmatrix}
+\end{align}
 \item Show that
 \begin{equation}
 y(n) =  \sum_{n=-\infty}^{\infty}x(n-k)h(k)
 \end{equation}
+\solution
+From \eqref{eq:convolution}, we substitute $k := n - k$ to get
+\begin{align}
+y\brak{n} &= \sum_{k=-\infty}^{\infty}x\brak{k}h\brak{n - k} \\
+		  &= \sum_{n - k=-\infty}^{\infty}x\brak{n - k}h\brak{k} \\
+		  &= \sum_{k=-\infty}^{\infty}x\brak{n - k}h\brak{k}
+\end{align}
 \end{enumerate}
-
 %
 \section{DFT and FFT}
 \begin{enumerate}[label=\thesection.\arabic*]
