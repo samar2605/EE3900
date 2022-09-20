@@ -306,9 +306,7 @@ y(n) + \frac{1}{2}y(n-1) = x(n) + x(n-2),
 Sketch $y(n)$.  
 \\
 \solution The following code yields Fig. \ref{fig:A1_3}.
-\begin{lstlisting}
-     wget https://raw.githubusercontent.com/samar2605/EE3900/master/filter/codes/A1_3.py
-\end{lstlisting}
+\lstinputlisting{./codes/A1_3.py}
 \begin{figure}[!ht]
 \begin{center}
 \includegraphics[width=\columnwidth]{./figs/A1_3.png}
@@ -319,20 +317,17 @@ Sketch $y(n)$.
 \item Repeat the above exercise using a C code.
 \solution The following code yields Fig. \ref{fig:A1_3point3}A .
 \begin{lstlisting}
-     wget https://raw.githubusercontent.com/samar2605/EE3900/master/filter/codes/A1_3.c
+     wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.py
 \end{lstlisting}
-\begin{lstlisting}
-     wget https://raw.githubusercontent.com/samar2605/EE3900/master/filter/codes/A1_3point3.py
-\end{lstlisting}
+\lstinputlisting{./codes/A1_3point3.py}
 \begin{figure}[!ht]
-     \begin{center}
-     \includegraphics[width=\columnwidth]{./figs/A1_3point3.png}
-     \end{center}
-     \captionof{figure}{}
-     \label{fig:}	
+\begin{center}
+\includegraphics[width=\columnwidth]{./figs/A1_3point3.png}
+\end{center}
+\captionof{figure}{}
+\label{fig:A1_3point3}	
 \end{figure}
 \end{enumerate}
-
 \section{$Z$-transform}
 \begin{enumerate}[label=\thesection.\arabic*]
 \item The $Z$-transform of $x(n)$ is defined as
@@ -445,22 +440,10 @@ Let
 \begin{equation}
 H\brak{e^{\j \omega}} = H\brak{z = e^{\j \omega}}.
 \end{equation}
-Plot $\abs{H\brak{e^{\j \omega}}}$.  Comment.  $H(e^{\j \omega})$ is
+Plot $\abs{H\brak{e^{\j \omega}}}$.  Is it periodic? If so, find the period. $H(e^{\j \omega})$ is
 known as the {\em Discret Time Fourier Transform} (DTFT) of $x(n)$.
 \\
-\solution  The graph is symmetric and periodic it is attending high of value 4 and minimum between (0 - 0.5). 
-It is bounded between (0, 4) and periodic with period $(2\pi)$ because in the below equation cos($\omega$) is periodic function having period $2\pi$
-\\
-\begin{align}
-     H\brak{e^{j \omega}} &= \frac{1+e^{-2j\omega}}{1 + \frac{e^{-j\omega}}{2}}\\
-          \implies \abs{H\brak{e^{j \omega}}} &= \frac{\abs{1+e^{-2j\omega}}}{\abs{1 + \frac{e^{-j\omega}}{2}}}\\
-                                   &= \frac{\abs{1+e^{2j\omega}}}{\abs{e^{2j\omega} + \frac{e^{j\omega}}{2}}}\\
-                                   &= \frac{\abs{1+\cos2\omega + j\sin2\omega}}{\abs{e^{j\omega}+ \frac{1}{2}}}\\
-                                   &= \frac{\abs{4\cos^2\brak{\omega} + 4j\sin\brak{\omega}\cos\brak{\omega}}}{\abs{2e^{j\omega} + 1}}\\
-                                   &= \frac{\abs{4\cos\brak{\omega}}\abs{\cos\brak{\omega} + j\sin\brak{\omega}}}{\abs{2\cos\brak{\omega} + 1 + 2j\sin\brak{\omega}}}\\
-          \therefore \abs{H\brak{e^{j \omega}}} &= \frac{\abs{4\cos\brak{\omega}}}{\sqrt{5 +4\cos\brak{\omega}}}
-\end{align}     
-The following code plots Fig. \ref{fig:dtft}.
+\solution The following code plots Fig. \ref{fig:dtft}.
 \begin{lstlisting}
 wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.py
 \end{lstlisting}
@@ -470,6 +453,27 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 \caption{$\abs{H\brak{e^{\j\omega}}}$}
 \label{fig:dtft}
 \end{figure}
+\solution The following code plots Fig. \ref{fig:dtft}.
+\begin{lstlisting}
+wget https://raw.githubusercontent.com/samar2605/EE3900/master/Assignment%201/codes/dtft.py
+\end{lstlisting}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/dtft}
+\caption{$\abs{H\brak{e^{\j\omega}}}$}
+\label{fig:dtft}
+\end{figure}
+It is bounded between $(0,4)$ and periodic with period $(2\pi)$\\
+\begin{align}
+     H\brak{e^{j \omega}} &= \frac{1+e^{-2j\omega}}{1 + \frac{e^{-j\omega}}{2}}\\
+       \implies \abs{H\brak{e^{j \omega}}} &= \frac{\abs{1+e^{-2j\omega}}}{\abs{1 + \frac{e^{-j\omega}}{2}}}\\
+                           &= \frac{\abs{1+e^{2j\omega}}}{\abs{e^{2j\omega} + \frac{e^{j\omega}}{2}}}\\
+                           &= \frac{\abs{1+\cos2\omega + j\sin2\omega}}{\abs{e^{j\omega}+ \frac{1}{2}}}\\
+                           &= \frac{\abs{4\cos^2\brak{\omega} + 4j\sin\brak{\omega}\cos\brak{\omega}}}{\abs{2e^{j\omega} + 1}}\\
+                           &= \frac{\abs{4\cos\brak{\omega}}\abs{\cos\brak{\omega} + j\sin\brak{\omega}}}{\abs{2\cos\brak{\omega} + 1 + 2j\sin\brak{\omega}}}\\
+       \therefore \abs{H\brak{e^{j \omega}}} &= \frac{\abs{4\cos\brak{\omega}}}{\sqrt{5 +4\cos\brak{\omega}}}
+   \end{align}
+
 \item Express $x(n)$ in terms of $H\brak{e^{\j \omega}}$.\\
 \solution 
 \begin{align}
