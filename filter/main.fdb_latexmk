@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1663707385 "/home/samar26/EE3900/filter/main.tex" "main.pdf" "main" 1663707386
+["pdflatex"] 1663707800 "/home/samar26/EE3900/filter/main.tex" "main.pdf" "main" 1663707801
   "/etc/texmf/web2c/texmf.cnf" 1659985362 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/samar26/EE3900/filter/main.tex" 1663707384 26165 af5fc71919e9b118185ae7225d047350 ""
+  "/home/samar26/EE3900/filter/main.tex" 1663707800 26707 40652dafe3768e5c47fd4bcfc8fd250d ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -115,6 +115,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty" 1643838029 59397 1bfeb7c4239ba9206737fca9cf861c65 ""
   "/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1616101747 5582 a43dedf8e5ec418356f1e9dfe5d29fc3 ""
   "/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty" 1615845910 6149 2398eec4faa1ee24ff761581e580ecf1 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/polynom/polynom.sty" 1500326898 63019 cf26ee4ea3401b795b608e2a2d49b4ea ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1137110629 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575674187 9715 b051d5b493d9fe5f4bc251462d039e5f ""
@@ -149,10 +150,10 @@
   "figs/A1_5_8.png" 1663707281 16494 c06dcd3430215ca82b941e2f3f146af2 ""
   "figs/dtft.pdf" 1659951227 15450 94db247a30fa4285a7c65e01601c6e02 ""
   "figs/yndft.pdf" 1659951227 13736 fd6661324716aaebfee5f2bbcff08d0e ""
-  "main.aux" 1663707386 4744 e1ff04cdfddb36ae80f19bc916088da9 "pdflatex"
-  "main.out" 1663707386 824 ede0bd39395c52b880a8a7eb6eb76c7d "pdflatex"
-  "main.tex" 1663707384 26165 af5fc71919e9b118185ae7225d047350 ""
-  "main.toc" 1663707386 495 c4ed9c5a56ead38c8fc78a5fb9505583 "pdflatex"
+  "main.aux" 1663707801 4750 94b438026b9ce36c6dca605e6e53e45d "pdflatex"
+  "main.out" 1663707801 824 ede0bd39395c52b880a8a7eb6eb76c7d "pdflatex"
+  "main.tex" 1663707800 26707 40652dafe3768e5c47fd4bcfc8fd250d ""
+  "main.toc" 1663707801 495 a143f31bfb6799104155ce3b0a1435ff "pdflatex"
   (generated)
   "main.aux"
   "main.log"
