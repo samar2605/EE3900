@@ -544,7 +544,7 @@ using \eqref{eq:anun} and \eqref{eq:z_trans_shift}.
 \solution Yes, it is bounded between and convergent. We can clearly see in the plot it is not tending to infinite and remain finite.
 The following code plots Fig. \ref{fig:hn}.
 \begin{lstlisting}
-wget https://github.com/yashrajput22/EE3900-22/blob/master/codes/Section-5/5_3.py
+wget https://raw.githubusercontent.com/samar2605/EE3900/master/filter/codes/A1_5_3.py
 \end{lstlisting}
 \begin{figure}[!ht]
 \centering
@@ -592,13 +592,41 @@ Therefore since $M$ exists and is a real value, we can say that h\brak{n} is bou
 %
 %
 \item Convergent? Justify using the ratio test.
+\\
+\solution
+We see that $h(n)$ is bounded. For large $n$, we see that 
+\begin{align}
+	h(n) &= \brak{-\frac{1}{2}}^n + \brak{-\frac{1}{2}}^{n - 2} \\
+		 &= \brak{-\frac{1}{2}}^{n}\brak{4 + 1} = 5\brak{-\frac{1}{2}}^n \\
+		 &\implies \left|\frac{h(n + 1)}{h(n)}\right| = \frac{1}{2}
+\end{align}
+and therefore, $\lim_{n \to \infty}\left|\frac{h(n + 1)}{h(n)}\right| = \frac{1}{2} < 1$. Hence, we see that $h(n)$ converges.
 \item The system with $h(n)$ is defined to be stable if
 \begin{equation}
 \sum_{n=-\infty}^{\infty}h(n) < \infty
 \end{equation}
 Is the system defined by \eqref{eq:iir_filter} stable for the impulse response in \eqref{eq:impulse_resp}?
 %
+\\
+\solution By using h(n) from 5.3
+\begin{align}
+h(n) &= \brak{-\frac{1}{2}}^{n}u(n) + \brak{-\frac{1}{2}}^{n-2}u(n-2)
+\\
+&= \sum_{n=-\infty}^{\infty} \brak{-\frac{1}{2}}^{n}u(n) + \brak{-\frac{1}{2}}^{n-2}u(n-2)
+\\
+&= \sum_{n=-\infty}^{\infty} \brak{-\frac{1}{2}}^{n}u(n) + \sum_{n=-\infty}^{\infty}  \brak{-\frac{1}{2}}^{n-2}u(n-2) 
+\\
+&= \sum_{n=-\infty}^{\infty} \brak{-\frac{1}{2}}^{n} + \sum_{n=-\infty}^{\infty}  \brak{-\frac{1}{2}}^{n-2}
+\\
+\\
+&= \frac{2}{3} + \frac{2}{3} < \infty 
+\end{align}
+%
 \item Verify the above result using a python code.
+\solution
+\begin{lstlisting}
+wget https://github.com/yashrajput22/EE3900-22/blob/master/codes/Section-5/5_6.py
+\end{lstlisting}
 \item 
 Compute and sketch $h(n)$ using 
 \begin{equation}
