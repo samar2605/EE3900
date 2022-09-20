@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.9)  21 SEP 2022 02:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.9)  21 SEP 2022 02:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -869,16 +869,64 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: Command \j invalid in math mode on input line 745.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 754.
+Underfull \hbox (badness 10000) in paragraph at lines 746--750
 
-<./figs/yndft.pdf, id=336, 462.52798pt x 346.89601pt>
-File: ./figs/yndft.pdf Graphic file (type pdf)
-<use ./figs/yndft.pdf>
-Package pdftex.def Info: ./figs/yndft.pdf  used on input line 766.
-(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-[7 <./figs/A1_5_8.png> <./figs/yndft.pdf>] [8
+ []
 
-] (./main.aux)
+
+Overfull \hbox (16.10861pt too wide) detected at line 770
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 774--776
+\OT1/txr/m/n/12 Now, from [] and [], we know
+ []
+
+
+Underfull \vbox (badness 6725) has occurred while \output is active []
+
+ [7 <./figs/A1_5_8.png>]
+
+LaTeX Warning: Command \j invalid in math mode on input line 789.
+
+
+LaTeX Warning: Reference `fig:xnyn' on page 8 undefined on input line 793.
+
+File: ./figs/A1_5_8.png Graphic file (type png)
+<use ./figs/A1_5_8.png>
+Package pdftex.def Info: ./figs/A1_5_8.png  used on input line 800.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--808
+
+ []
+
+
+LaTeX Warning: Reference `fig:xnyn' on page 8 undefined on input line 811.
+
+File: ./figs/A1_3.png Graphic file (type png)
+<use ./figs/A1_3.png>
+Package pdftex.def Info: ./figs/A1_3.png  used on input line 814.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+
+LaTeX Warning: Reference `eq:inv-ft' on page 8 undefined on input line 842.
+
+
+LaTeX Warning: Reference `eq:fp' on page 8 undefined on input line 848.
+
+
+LaTeX Warning: Reference `fig:xnyn' on page 8 undefined on input line 854.
+
+
+Underfull \vbox (badness 4096) has occurred while \output is active []
+
+ [8]
+File: ./figs/A1_5_8.png Graphic file (type png)
+<use ./figs/A1_5_8.png>
+Package pdftex.def Info: ./figs/A1_5_8.png  used on input line 862.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+ [9] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -886,18 +934,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EDE0BD39395C52B880A8A7EB6EB76C7D;824.
  ) 
 Here is how much of TeX's memory you used:
- 16843 strings out of 478287
- 263291 string characters out of 5849290
+ 16866 strings out of 478287
+ 263469 string characters out of 5849290
  987409 words of memory out of 5000000
- 34567 multiletter control sequences out of 15000+600000
- 542527 words of font info for 185 fonts, out of 8000000 for 9000
+ 34569 multiletter control sequences out of 15000+600000
+ 543877 words of font info for 187 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,15n,63p,264b,1436s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,17n,63p,344b,1436s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 212242 bytes).
+Output written on main.pdf (9 pages, 209480 bytes).
 PDF statistics:
- 520 PDF objects out of 1000 (max. 8388607)
- 407 compressed objects within 5 object streams
- 211 named destinations out of 1000 (max. 500000)
- 92 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 429 compressed objects within 5 object streams
+ 231 named destinations out of 1000 (max. 500000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 

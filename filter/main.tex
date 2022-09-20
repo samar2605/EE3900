@@ -745,32 +745,132 @@ Compute
 X(k) \define \sum _{n=0}^{N-1}x(n) e^{-\j2\pi kn/N}, \quad k = 0,1,\dots, N-1
 \end{equation}
 and $H(k)$ using $h(n)$.
+\\\solution\\
+We know that ,\\
+\begin{equation}
+	x(n) = \cbrak{\underset{\uparrow}{1},2,3,4,2,1}
+\end{equation}
+Here, let, $\omega=e^{-j2\pi k}$. Then,
+\begin{align}
+	X(k)=1+2\omega^{\frac{1}{5}}+3\omega^{\frac{2}{5}}+4\omega^{\frac{3}{5}}+2\omega^{\frac{4}{5}}+\omega
+	\label{eq:Xkdef}
+\end{align}
+Similarly, we know from \eqref{eq:hn_theoritical_def},
+\begin{align}
+	h\brak{n} &= \begin{cases}
+					 0 &, n < 0\\
+					 \brak{\frac{-1}{2}}^n &, 0\leq n<2\\
+					 5\brak{\frac{-1}{2}}^n &, n \geq 2
+				  \end{cases}
+\end{align}
+Now,again let, $\omega=e^{-j2\pi k}$. Then,
+\begin{align}
+	H(k)=1+\frac{-1}{2}\omega^{\frac{1}{5}}+\frac{5}{4}\omega^{\frac{2}{5}}+\frac{-5}{8}\omega^{\frac{3}{5}}+\frac{5}{16}\omega^{\frac{4}{5}}+\frac{-5}{32}\omega
+	\label{eq:Hkdef}
+\end{align}
 \item Compute 
 \begin{equation}
 Y(k) = X(k)H(k)
 \end{equation}
+\\\solution\\Now, from \eqref{eq:Xkdef} and \eqref{eq:Hkdef}, we know $X(k) and H(k)$. Now, given that,
+\begin{equation}
+	Y\brak{k}=X\brak{k}*H\brak{k}
+\end{equation}
+%\polyadd\PolynomX{1+2\omega^{\frac{1}{5}}+3\omega^{\frac{2}{5}}+4\omega^{\frac{3}{5}}+2\omega^{\frac{4}{5}}+\omega}{0}
+\begin{multline}
+	Y\brak{k}= (1+2\omega^{\frac{1}{5}}+3\omega^{\frac{2}{5}}+4\omega^{\frac{3}{5}}+2\omega^{\frac{4}{5}}+\omega)* \\(1+\frac{-1}{2}\omega^{\frac{1}{5}}+\frac{5}{4}\omega^{\frac{2}{5}}+\frac{-5}{8}\omega^{\frac{3}{5}}+\frac{5}{16}\omega^{\frac{4}{5}}+\frac{-5}{32}\omega)
+\end{multline}
+\begin{multline}
+	Y\brak{k}= 1+\frac{3}{2}\omega^{\frac{1}{5}}+\frac{13}{4}\omega^{\frac{2}{5}}+\frac{35}{8}\omega^{\frac{3}{5}}+\frac{45}{16}\omega^{\frac{4}{5}}\\\frac{115}{32}\omega^{\frac{5}{5}}+\frac{1}{8}\omega^{\frac{6}{5}}+\frac{25}{32}\omega^{\frac{7}{5}}-\frac{5}{8}\omega^{\frac{8}{5}}\\-\frac{5}{32}\omega^{5} 
+\end{multline}
+where, $\omega=e^{-j2k\pi}$
 \item Compute
 \begin{equation}
  y\brak{n}={\frac {1}{N}}\sum _{k=0}^{N-1}Y\brak{k}\cdot e^{\j 2\pi kn/N},\quad n = 0,1,\dots, N-1
 \end{equation}
-\\
-\solution The following code plots Fig. \ref{fig:ynconv}. Note that this is the same as 
-$y(n)$ in  Fig. 
-\ref{fig:A1_3}. 
+\solution The following code plots Fig. \ref{fig:ynconv} and computes $X(k)$
+and $Y(k)$. Note that this is the same as 
+$y(n)$ in  Fig. \ref{fig:xnyn}. 
 %
 \begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yndft.py
+wget https://github.com/yashrajput22/EE3900-22/blob/master/codes/Section-6/6_3.py
 \end{lstlisting}
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=\columnwidth]{./figs/yndft}
+\includegraphics[width=\columnwidth]{./figs/A1_5_8.png}
 \caption{$y(n)$ from the DFT}
 \label{fig:yndft}
 \end{figure}
-
 \item Repeat the previous exercise by computing $X(k), H(k)$ and $y(n)$ through FFT and 
 IFFT.
+\solution Download the code from
+\\
+\begin{lstlisting}
+wget https://github.com/yashrajput22/EE3900-22/blob/master/codes/Section-6/6_4.py
+\end{lstlisting}
+Observe that Fig. \eqref{fig:y-n-fft} is the same as $y(n)$ in Fig. \eqref{fig:xnyn}.
+\begin{figure}
+	\centering
+	\includegraphics[width=\columnwidth]{./figs/A1_3.png}
+	\caption{$y(n)$ using FFT and IFFT}
+	\label{fig:y-n-fft}
+\end{figure}
 \item Wherever possible, express all the above equations as matrix equations.
+\\
+\solution
+We use the DFT Matrix, where $\omega = e^{-\frac{j2k\pi}{N}}$, which is given by
+\begin{align}
+	\mtx{W} = 
+	\begin{pmatrix}
+		\omega^0 & \omega^0 & \ldots & \omega^0 \\
+		\omega^0 & \omega^1 & \ldots & \omega^{N - 1} \\
+		\vdots & \vdots & \ddots & \vdots \\
+		\omega^0 & \omega^{N - 1} & \ldots & \omega^{(N -1)(N - 1)}
+	\end{pmatrix}
+\end{align}
+i.e. $W_{jk} = \omega^{jk}$, $0 \leq j, k < N$. Hence, we can write any DFT equation as
+\begin{align}
+	\mtx{X} = \mtx{W}\mtx{x} = \mtx{x}\mtx{W}
+\end{align}
+\noindent where
+\begin{align}
+	\mtx{x} = 
+	\begin{pmatrix}
+		x(0) \\ x(1) \\ \vdots \\ x(n - 1)
+	\end{pmatrix}
+\end{align}
+\noindent Using \eqref{eq:inv-ft}, the inverse Fourier Transform is given by
+\begin{align}
+	\mtx{x} = \mathcal{F}^{-1}\brak{\mtx{X}} = \mtx{W}^{-1}\mtx{X} &= 
+	\frac{1}{N}\mtx{W^{H}}\mtx{X} = \frac{1}{N}\mtx{X}\mtx{W^{H}} \\ 
+	\implies \mtx{W}^{-1} &= \frac{1}{N}\mtx{W^{H}}
+\end{align}
+\noindent where $H$ denotes hermitian operator. We can rewrite \eqref{eq:fp} using the
+element-wise multiplication operator as
+\begin{align}
+	\mtx{Y} = \mtx{H}\cdot\mtx{X} = \brak{\mtx{W}\mtx{h}}\cdot\brak{\mtx{W}\mtx{x}}
+\end{align}
+The plot of $y(n)$ using the DFT matrix in Fig. \eqref{fig:yn-mtx} is the same as $y(n)$ in 
+Fig. \eqref{fig:xnyn}. Download the code using
+\begin{lstlisting}
+wget https://github.com/yashrajput22/EE3900-22/blob/master/codes/Section-6/6_5.py
+\end{lstlisting}
+and run it using
+%	\end{enumerate}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\columnwidth]{./figs/A1_5_8.png}
+	\caption{$y(n)$ using the DFT matrix}
+	\label{fig:yn-mtx}
+\end{figure}
+% \item Verify the above equations by generating the DFT matrix in python.\\
+% \solution
+% \begin{figure}[!htb]
+% 	\centering
+% 	\includegraphics[width=\columnwidth]{./figs/6_6.png}
+% 	\caption{$y(n)$ using the DFT matrix}
+% 	\label{fig:yn-mtx}
+% \end{figure}
 \item Verify the above equations by generating the DFT matrix in python.
 \end{enumerate}
 %
