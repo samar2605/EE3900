@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1662956485 "/home/samar26/EE3900/Assignment 1/main.tex" "main.pdf" "main" 1662956486
+["pdflatex"] 1663702217 "/home/samar26/EE3900/Assignment 1/main.tex" "main.pdf" "main" 1663702217
   "/etc/texmf/web2c/texmf.cnf" 1659985362 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/samar26/EE3900/Assignment 1/main.tex" 1662956484 21323 fb296e69732c4a94fa3f7f1a68486afc ""
+  "/home/samar26/EE3900/Assignment 1/main.tex" 1663702216 21323 fb296e69732c4a94fa3f7f1a68486afc ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -158,10 +158,10 @@
   "figs/hndef.pdf" 1659951227 14242 d3e7fb01c593ca2af446f7c68f397148 ""
   "figs/ynconv.pdf" 1659951227 14114 626c92cb9c1538e5175d323cbd504933 ""
   "figs/yndft.pdf" 1659951227 13736 fd6661324716aaebfee5f2bbcff08d0e ""
-  "main.aux" 1662956486 5101 1fb0f557a840e3a9ac73c790905c7435 "pdflatex"
-  "main.out" 1662956486 824 ede0bd39395c52b880a8a7eb6eb76c7d "pdflatex"
-  "main.tex" 1662956484 21323 fb296e69732c4a94fa3f7f1a68486afc ""
-  "main.toc" 1662956486 495 8d16556aa261e9c0cf90d8526863efe7 "pdflatex"
+  "main.aux" 1663702217 5101 1fb0f557a840e3a9ac73c790905c7435 "pdflatex"
+  "main.out" 1663702217 824 ede0bd39395c52b880a8a7eb6eb76c7d "pdflatex"
+  "main.tex" 1663702216 21323 fb296e69732c4a94fa3f7f1a68486afc ""
+  "main.toc" 1663702217 495 8d16556aa261e9c0cf90d8526863efe7 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
