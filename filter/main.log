@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.9)  23 SEP 2022 18:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.9)  23 SEP 2022 18:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -888,10 +888,7 @@ Underfull \vbox (badness 6725) has occurred while \output is active []
 
 LaTeX Warning: Command \j invalid in math mode on input line 818.
 
-
-LaTeX Warning: Reference `fig:xnyn' on page 8 undefined on input line 822.
-
-<./figs/A1_6_3.png, id=365, 462.528pt x 346.896pt>
+<./figs/A1_6_3.png, id=366, 462.528pt x 346.896pt>
 File: ./figs/A1_6_3.png Graphic file (type png)
 <use ./figs/A1_6_3.png>
 Package pdftex.def Info: ./figs/A1_6_3.png  used on input line 829.
@@ -901,10 +898,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 833--837
 
  []
 
-
-LaTeX Warning: Reference `fig:xnyn' on page 8 undefined on input line 840.
-
-<./figs/A1_6_4.png, id=367, 462.528pt x 346.896pt>
+<./figs/A1_6_4.png, id=369, 462.528pt x 346.896pt>
 File: ./figs/A1_6_4.png Graphic file (type png)
 <use ./figs/A1_6_4.png>
 Package pdftex.def Info: ./figs/A1_6_4.png  used on input line 843.
@@ -916,18 +910,17 @@ LaTeX Warning: Reference `eq:inv-ft' on page 8 undefined on input line 871.
 LaTeX Warning: Reference `eq:fp' on page 8 undefined on input line 877.
 
 
-LaTeX Warning: Reference `fig:xnyn' on page 8 undefined on input line 883.
-
-
-Underfull \vbox (badness 4096) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 <./figs/A1_6_3.png> <./figs/A1_6_4.png>]
-<./figs/A1_6_5.png, id=394, 462.528pt x 346.896pt>
+
+LaTeX Warning: Reference `fig:xnyn' on page 9 undefined on input line 883.
+
+<./figs/A1_6_5.png, id=395, 462.528pt x 346.896pt>
 File: ./figs/A1_6_5.png Graphic file (type png)
 <use ./figs/A1_6_5.png>
 Package pdftex.def Info: ./figs/A1_6_5.png  used on input line 891.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-
 
 LaTeX Warning: Command \j invalid in math mode on input line 942.
 
@@ -972,14 +965,14 @@ LaTeX Warning: Command \j invalid in math mode on input line 1037.
 LaTeX Warning: Command \j invalid in math mode on input line 1037.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1041.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 1041.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 1041.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 1041.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 1046.
@@ -1097,10 +1090,10 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  60i,17n,63p,344b,1277s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (12 pages, 257715 bytes).
+Output written on main.pdf (12 pages, 257907 bytes).
 PDF statistics:
- 637 PDF objects out of 1000 (max. 8388607)
- 540 compressed objects within 6 object streams
+ 639 PDF objects out of 1000 (max. 8388607)
+ 542 compressed objects within 6 object streams
  312 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
