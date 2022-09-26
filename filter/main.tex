@@ -803,6 +803,7 @@ Y(k) = X(k)H(k)
 \end{equation}
 \\\solution\\Now, from \eqref{eq:Xkdef} and \eqref{eq:Hkdef}, we know $X(k) and H(k)$. Now, given that,
 \begin{equation}
+	\label{eq:fp}
 	Y\brak{k}=X\brak{k}*H\brak{k}
 \end{equation}
 %\polyadd\PolynomX{1+2\omega^{\frac{1}{5}}+3\omega^{\frac{2}{5}}+4\omega^{\frac{3}{5}}+2\omega^{\frac{4}{5}}+\omega}{0}
@@ -815,6 +816,7 @@ Y(k) = X(k)H(k)
 where, $\omega=e^{-j2k\pi}$
 \item Compute
 \begin{equation}
+	\label{eq:inv-ft}
  y\brak{n}={\frac {1}{N}}\sum _{k=0}^{N-1}Y\brak{k}\cdot e^{\j 2\pi kn/N},\quad n = 0,1,\dots, N-1
 \end{equation}
 \solution The following code plots Fig. \ref{fig:ynconv} and computes $X(k)$
@@ -880,7 +882,7 @@ element-wise multiplication operator as
 	\mtx{Y} = \mtx{H}\cdot\mtx{X} = \brak{\mtx{W}\mtx{h}}\cdot\brak{\mtx{W}\mtx{x}}
 \end{align}
 The plot of $y(n)$ using the DFT matrix in Fig. \eqref{fig:yn-mtx} is the same as $y(n)$ in 
-Fig. \eqref{fig:xnyn}. Download the code using
+Fig. \eqref{fig:A1_3}. Download the code using
 \begin{lstlisting}
 wget https://raw.githubusercontent.com/samar2605/EE3900/master/filter/codes/A1_6_5.py
 \end{lstlisting}
@@ -900,7 +902,7 @@ and run it using
 % 	\caption{$y(n)$ using the DFT matrix}
 % 	\label{fig:yn-mtx}
 % \end{figure}
-\item Verify the above equations by generating the DFT matrix in python.
+%\item Verify the above equations by generating the DFT matrix in python.
 \end{enumerate}
 %
 \section{FFT}
@@ -1363,9 +1365,9 @@ where we define $x_3(k) = x(4k)$, $x_4(k) = x(4k + 2)$, $x_5(k) = x(4k + 1)$, an
 \begin{lstlisting}
 $ wget https://raw.githubusercontent.com/samar2605/EE3900/master/filter/codes/A1_7_11.py
 \end{lstlisting}
-    \item Repeat the above exercise using the FFT
-	    after zero padding $\vec{x}$.
-%	    \eqref{eq:fft-mat-def}
+%     \item Repeat the above exercise using the FFT
+% 	    after zero padding $\vec{x}$.
+% %	    \eqref{eq:fft-mat-def}
 \item Write a C program to compute the 8-point FFT. \\
 \solution The C code for the above two problems can be downloaded from
 \begin{lstlisting}
