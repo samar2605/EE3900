@@ -1393,7 +1393,7 @@ in Problem \ref{prob:output} is executed through the following difference equati
 where the input signal is $x(n)$ and the output signal is $y(n)$ with initial values all 0. Replace
 \textbf{signal.filtfilt} with your own routine and verify.\\
 \begin{lstlisting}
-wget https://github.com/yashrajput22/EE3900-22/blob/master/codes/Section-7/7_1.py
+wget https://raw.githubusercontent.com/samar2605/EE3900/master/filter/codes/A1_8_1.py
 \end{lstlisting}
 %wget https://github.com/yashrajput22/EE3900-22/blob/master/codes/Section-7/7_1.py
 \item Repeat all the exercises in the previous sections for the above $a$ and $b$.
@@ -1447,11 +1447,11 @@ Substituting the values,
 \end{align}
 The values $r(i)$, $p(i)$, $k(i)$ and thus the impulse response function are computed and plotted at
 \begin{lstlisting}
-wget https://github.com/yashrajput22/EE3900-22/blob/master/codes/Section-7/7_2_1.py
+wget https://github.com/samar2605/EE3900/blob/master/filter/codes/A1_8_2_1.py
 \end{lstlisting}
 The filter frequency response is plotted at
 \begin{lstlisting}
-wget https://github.com/yashrajput22/EE3900-22/blob/master/codes/Section-7/7_2_2.py
+wget https://raw.githubusercontent.com/samar2605/EE3900/master/filter/codes/A1_8_2_2.py
 \end{lstlisting}
 Observe that for a series $t_n = r^n$, $\frac{t_{n + 1}}{t_n} = r$.
 By the ratio test, $t_n$ converges if $|r| < 1$. We note that
@@ -1466,7 +1466,7 @@ $h(n)$ is negligible after $n \geq 64$, and we
 can apply a 64-bit FFT to get y(n). The following code uses the DFT matrix
 to generate $y(n)$.
 \begin{lstlisting}
-wget https://github.com/yashrajput22/EE3900-22/blob/master/codes/Section-7/7_2_3.py
+wget https://raw.githubusercontent.com/samar2605/EE3900/master/filter/codes/A1_8_2_3.py
 \end{lstlisting}
 \begin{figure}[!htb]
 	\includegraphics[width=\columnwidth]{./figs/A1_8_2_1.png}
