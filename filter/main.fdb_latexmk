@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1664514523 "/home/samar26/EE3900/filter/main.tex" "main.pdf" "main" 1664514524
+["pdflatex"] 1664514668 "/home/samar26/EE3900/filter/main.tex" "main.pdf" "main" 1664514669
   "/etc/texmf/web2c/texmf.cnf" 1659985362 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/samar26/EE3900/filter/main.tex" 1664514521 48755 b7587dcfd49295bd5fc5dfb69c5e20a9 ""
+  "/home/samar26/EE3900/filter/main.tex" 1664514667 48748 ee473ccbbdfd73b4f5567d1b95feb7a9 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -156,10 +156,10 @@
   "figs/A1_8_2_2.png" 1664476716 16972 a1ac3c6a031af274b4881d54e1bf9077 ""
   "figs/A1_8_2_3.png" 1664476766 17727 3a72abc59ed1d30acd7cedfafa33a5cd ""
   "figs/dtft.pdf" 1659951227 15450 94db247a30fa4285a7c65e01601c6e02 ""
-  "main.aux" 1664514524 7465 2e8c9b3a3a1b7a7b20ca93983293bd6a "pdflatex"
-  "main.out" 1664514524 882 edfc8e4b8727edba1bb28508a87337f9 "pdflatex"
-  "main.tex" 1664514521 48755 b7587dcfd49295bd5fc5dfb69c5e20a9 ""
-  "main.toc" 1664514524 555 8de9e3ed0c9c80346dce0e174c9ea2f8 "pdflatex"
+  "main.aux" 1664514669 7465 2e8c9b3a3a1b7a7b20ca93983293bd6a "pdflatex"
+  "main.out" 1664514669 882 edfc8e4b8727edba1bb28508a87337f9 "pdflatex"
+  "main.tex" 1664514667 48748 ee473ccbbdfd73b4f5567d1b95feb7a9 ""
+  "main.toc" 1664514669 555 8de9e3ed0c9c80346dce0e174c9ea2f8 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
