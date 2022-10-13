@@ -319,7 +319,10 @@ Now, labelling points G and X as in Fig. \ref{fig:ckt-q1}, we use KCL at X.
     &V(s) \system{L} \frac{2R_1 + R_2}{R_1 + R_2}u(t)\brak{1 - e^{-\brak{\frac{1}{R_1} + \frac{1}{R_2}}\frac{t}{C_0}}} \\
     &= \frac{4}{3}\brak{1 - e^{-\brak{1.5 \times 10^6}t}}u(t)
 \end{align}
-The python code \texttt{codes/2\_6.py} plots the graph below.
+The python code plots the graph below.
+\begin{lstlisting}
+    wget https://raw.githubusercontent.com/samar2605/EE3900/master/cktsig/codes/2_6.py
+\end{lstlisting}
 \begin{figure}[!htb]
     \includegraphics[width=\columnwidth]{figs/2_6.png}
     \caption{$v_{C_0}(t)$ before the switch is flipped}
@@ -327,7 +330,10 @@ The python code \texttt{codes/2\_6.py} plots the graph below.
 \end{figure}
 \item Verify your result using ngspice.
 
-\solution The ngspice script \texttt{codes/2\_7.cir} simulates the given circuit and the generated output is depicted in Fig. \eqref{fig:v1-t}
+\solution The ngspice script 
+\begin{lstlisting}
+    wget https://raw.githubusercontent.com/samar2605/EE3900/master/cktsig/codes/2_7.cir
+\end{lstlisting}simulates the given circuit and the generated output is depicted in Fig. \eqref{fig:v1-t}
 \end{enumerate}
 
  \section{Initial Conditions}
@@ -408,7 +414,10 @@ Substituting values gives
     v_{C_0}(t) = \frac{2}{3}\brak{1 +e^{-\brak{1.5 \times 10^6}t}}u(t)
     \label{eq:v2-t}
 \end{align}
-The Python code \texttt{codes/3\_4.py} plots the graph below.
+The Python code plots the graph below.
+\begin{lstlisting}
+    wget https://raw.githubusercontent.com/samar2605/EE3900/master/cktsig/codes/3_4.py
+\end{lstlisting}
 \begin{figure}[!htb]
     \includegraphics[width=\columnwidth]{figs/3_4.png}
     \caption{$v_{C_0}(t)$ after the switch is flipped}
@@ -416,7 +425,11 @@ The Python code \texttt{codes/3\_4.py} plots the graph below.
 \end{figure}
 \item Verify your result using ngspice.
 
-\solution The ngspice script \texttt{codes/3\_5.cir} simulates the given circuit and the generated output is depicted in Fig. \eqref{fig:v2-t}.
+\solution The ngspice script
+\begin{lstlisting}
+    wget https://raw.githubusercontent.com/samar2605/EE3900/master/cktsig/codes/3_5.cir
+\end{lstlisting}
+simulates the given circuit and the generated output is depicted in Fig. \eqref{fig:v2-t}.
 \item Find $v_{C_0}(0-), v_{C_0}(0+)$ and  $v_{C_0}(\infty) $. 
 
 \solution From the initial conditions,
